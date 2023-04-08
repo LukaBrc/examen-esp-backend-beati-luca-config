@@ -9,8 +9,8 @@ spring:
   data:
     mongodb:
       database: test
-      port: 27017 
-  eureka:
+      port: 27018 
+eureka:
   instance:
     hostname: localhost
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
