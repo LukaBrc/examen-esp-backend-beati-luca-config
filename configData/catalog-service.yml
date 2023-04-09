@@ -47,7 +47,7 @@ resilience4j:
         automatic-transition-from-open-to-half-open-enabled: true
         failure-rate-threshold: 40
     instances:
-      configCard:
+      configCatalog:
         base-config: default
         sliding-window-type: COUNT_BASED
         sliding-window-size: 10
