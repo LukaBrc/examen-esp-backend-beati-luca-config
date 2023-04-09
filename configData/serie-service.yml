@@ -18,12 +18,14 @@ spring:
       database: test
       port: 27018 
 eureka:
+  healthcheck:
+    enabled: true
   instance:
     hostname: localhost
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     registerWithEureka: true
     fetchRegistry: true
-    service-url:
+    serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
