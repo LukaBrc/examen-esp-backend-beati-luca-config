@@ -21,7 +21,7 @@ spring:
         - id: msserie
           uri: lb://serie-service
           predicates:
-            - Path=/api/v1/series/**         
+            - Path=/api/v1/series/**
 info:
   app:
     name: ${spring.application.name}
